@@ -1,0 +1,54 @@
+{
+  "name": "dsh-project-deck",
+  "version": "1.0.0",
+  "description": "Modern Project Deck & Group Organizer for DeepSeek Harness (DSH). Organize multiple independent workspaces into project folders, retain strict workspace boundaries, full session archive & delete lifecycle, and one-click native view toggle.",
+  "keywords": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "workspace",
+    "project",
+    "folder",
+    "group",
+    "archive",
+    "deck"
+  ],
+  "author": "Gjx <g2132045852@163.com>",
+  "license": "MIT",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "README.zh-CN.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-sidebar",
+        "@deepseek-ai/dsh-client-ui-workspace",
+        "@deepseek-ai/dsh-typert-registry",
+        "@deepseek-ai/dsh-client-connection"
+      ],
+      "platform": "web"
+    },
+    "manifestVersion": 1
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": ">=4.0.1 <5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

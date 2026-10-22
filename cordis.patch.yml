@@ -1,0 +1,5 @@
+# dsh-project-deck bundle patch
+# Inserts project-deck loader entry at the profile root
+- insert:
+    - id: project-deck
+      name: 'dsh-project-deck'
