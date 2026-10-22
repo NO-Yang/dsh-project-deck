@@ -49,11 +49,11 @@
 2. 进入 **设置 (Settings)** ➔ **插件 (Plugins)** ➔ **安装第三方插件 / 插件市场**。
 3. 在插件搜索/安装输入框中，输入 GitHub 仓库标识：
    ```text
-   github:<你的GitHub用户名>/dsh-project-deck
+   github:NO-Yang/dsh-project-deck
    ```
    或直接输入仓库地址：
    ```text
-   https://github.com/<你的GitHub用户名>/dsh-project-deck
+   https://github.com/NO-Yang/dsh-project-deck
    ```
 4. 点击 **安装 (Install)**。
 5. 安装完成后重启 DeepSeek Harness，左侧侧边栏即可自动加载「项目组」视图！
@@ -69,12 +69,12 @@
 cd $env:USERPROFILE\.dsh\profiles\desktop
 
 # 使用 pnpm 直接安装 GitHub 源
-pnpm add github:<你的GitHub用户名>/dsh-project-deck
+pnpm add github:NO-Yang/dsh-project-deck
 ```
 
 若使用的是带有 `dsh` CLI 命令的环境：
 ```bash
-dsh plugin --profile desktop add github:<你的GitHub用户名>/dsh-project-deck
+dsh plugin --profile desktop add github:NO-Yang/dsh-project-deck
 ```
 
 安装后完全退出并重新启动 DeepSeek Harness 即可生效。
@@ -87,7 +87,7 @@ dsh plugin --profile desktop add github:<你的GitHub用户名>/dsh-project-deck
 
 ```powershell
 # 1. 克隆代码到本地
-git clone https://github.com/<你的GitHub用户名>/dsh-project-deck.git E:\Project\DSH\dsh-project-deck
+git clone https://github.com/NO-Yang/dsh-project-deck.git E:\Project\DSH\dsh-project-deck
 
 # 2. 在 DSH 桌面 profile 的 node_modules 中创建软链接
 New-Item -ItemType SymbolicLink `
@@ -101,7 +101,7 @@ New-Item -ItemType SymbolicLink `
 
 ## 📖 使用说明
 
-1. **新建项目组**：点击侧栏顶部的「新建组」按钮，输入项目组名称（例如：`天喻PLM项目群`）。
+1. **新建项目组**：点击侧栏顶部的「新建组」按钮，输入项目组名称（例如：`xxx项目群`）。
 2. **工作区归组**：
    - 默认新检测到的工程会展示在「未分类工程」折叠块中。
    - 在工作区行的下拉框中选择目标项目组，工程将即时归入对应项目文件夹。

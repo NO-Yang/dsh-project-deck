@@ -49,11 +49,11 @@ In daily development with DeepSeek Harness (DSH):
 2. Navigate to **Settings** ➔ **Plugins** ➔ **Install / Market**.
 3. In the repository / install field, enter:
    ```text
-   github:<your-github-username>/dsh-project-deck
+   github:NO-Yang/dsh-project-deck
    ```
    Or the full repository URL:
    ```text
-   https://github.com/<your-github-username>/dsh-project-deck
+   https://github.com/NO-Yang/dsh-project-deck
    ```
 4. Click **Install**.
 5. Restart DeepSeek Harness to activate the Project Deck view!
@@ -69,12 +69,12 @@ Install directly into your DSH desktop profile:
 cd $env:USERPROFILE\.dsh\profiles\desktop
 
 # Install directly from GitHub
-pnpm add github:<your-github-username>/dsh-project-deck
+pnpm add github:NO-Yang/dsh-project-deck
 ```
 
 If you have the `dsh` CLI available:
 ```bash
-dsh plugin --profile desktop add github:<your-github-username>/dsh-project-deck
+dsh plugin --profile desktop add github:NO-Yang/dsh-project-deck
 ```
 
 Quit and restart DeepSeek Harness completely.
@@ -85,7 +85,7 @@ Quit and restart DeepSeek Harness completely.
 
 ```powershell
 # 1. Clone repository
-git clone https://github.com/<your-github-username>/dsh-project-deck.git E:\Project\DSH\dsh-project-deck
+git clone https://github.com/NO-Yang/dsh-project-deck.git E:\Project\DSH\dsh-project-deck
 
 # 2. Create directory junction to DSH profile node_modules
 New-Item -ItemType SymbolicLink `
@@ -99,7 +99,7 @@ New-Item -ItemType SymbolicLink `
 
 ## 📖 Usage
 
-1. **New Group**: Click `+ New Group` at the top of the sidebar and enter a name (e.g., `Enterprise PLM Group`).
+1. **New Group**: Click `+ New Group` at the top of the sidebar and enter a name (e.g., `XXXXGroup`).
 2. **Assign Workspaces**: Any detected workspace defaults to the "Uncategorized" section. Use the dropdown on each workspace row to assign it to a group folder.
 3. **Start Session**: Hover over any workspace row and click `+`.
 4. **Archive & Delete**: Hover over any session row to archive (`📦`) or delete (`🗑️`).
